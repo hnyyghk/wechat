@@ -1,0 +1,22 @@
+server:
+  port: 2096
+spring:
+  application:
+    name: wechat
+starter:
+  web:
+    common:
+      accessLogEnabled: false
+wechat:
+  appId: # 公众号appId
+  secret: # 公众平台配置的secret
+  token: # 公众平台配置的token
+  encodingAesKey: # 公众平台配置的encodingAesKey
+logging:
+  level:
+    com:
+      _5icodes:
+        starter:
+          webmvc:
+            log:
+              LogFilter: trace
